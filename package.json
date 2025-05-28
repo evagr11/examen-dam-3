@@ -1,19 +1,26 @@
 {
-  "name": "express-shield",
+  "name": "examen-dam-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Contexto",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon -e js,html,css,njk,json index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "@types/express": "^5.0.2",
+    "bcrypt": "^6.0.0",
+    "connect-sqlite3": "^0.9.15",
     "express": "^5.1.0",
-    "express-basic-auth": "^1.2.1"
+    "express-session": "^1.18.1",
+    "mysql2": "^3.14.1",
+    "nunjucks": "^3.2.4",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "standard": "^17.1.2"
